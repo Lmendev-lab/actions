@@ -1,0 +1,9 @@
+name: hello actions
+on: [push]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-ruby@v1
+    - run: ruby file.rb
